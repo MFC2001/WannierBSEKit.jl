@@ -1,0 +1,1004 @@
+
+ BerkeleyGW version 4.0
+ Epsilon code, Complex version, run on 01-Jul-2026 at 03:56:39 +0800
+
+                                                                 ..o.          
+                                                                .oxxo.         
+                                                               .oxxxxo...      
+                                                               oxxxxxxo.       
+                                                              .oxxxxxxx.       
+                                                              .ooooooxxo..     
+                                                              .oooooooxo..     
+                                                              .oooooxxo...     
+                                                       .........oxooo......    
+                                                 ............................  
+                                             ................................. 
+                                          .................................... 
+           .          ..oo. ....  .................................oooxxxxxxxo.
+     .............oxxxx@ox@@@x@x.....................o...........ooooooooooxx. 
+    .o.........oox@x.oo........xxx@@............ooxxxxo..........ooooxxxxxoxo  
+    .x........x@xxo...............o@xxo........oxxx@@@xoooooooooooooooxxxo...  
+    .o......ox@@o..................oox@o.....ooxxx@xoooxxxxxxxoooooooooooo.... 
+    o..ooooo@@xoooo....ooo...........x@o.....ooxxxxo   .oxxxxxxxxxxooooooo.... 
+    . .oooo@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@....ooooox.     .oxx@@@@@xxoo........ 
+      .ooooxxxxxxxooooooxooooooooooooooxo...oooooxx.        ..ox@xxxoo.........
+      .ooooooxxxx@xoooooooooooooxxoooooooooooxxxxx.            .oxxooooooooxxo.
+     .oooooxxxxx@@@xxxxxxxxxxxxxxxxxxxxxxxxoxxxxo.                .oxxxxxxxxo. 
+   ....oooxxxxx@@@xo..oxxx@@@@@@xxxxoxxoooooooxx.                  .oxxxoo..   
+  .....ooxxxx@@xo.       ........    .ooooooooxxo                              
+  ..oooxxxx@@@o                       .oooooooxoo.                             
+  ....oxooxxxxx.                       .ooo..oooo.                             
+  .....o.ooxxxxxo.                     .oooooooxo.                             
+ ......ooooxxxxxxo.                     .ooooooxoo..                           
+........ooxxxxxxxo..                     .o....oxoo...                         
+.......ooooxxxxxxxo.                     ........oooo.                         
+.ooooooo..ooxxxxoooo.                    .........ooo...                       
+..oxo...ooooxxxoooo..                    .ooo......oooo...                     
+  .ooooo....o.                            .oxxxoo....ooo....                   
+    .oooooo...                              ...ooooo...ooo..                   
+       ...                                     .oo.......                      
+                                               ....ooo...                      
+                      __              __                                       
+ ______              [  |            [  |                 ._____  _          _ 
+|_   _ \              | |  _          | |                /  ___ \| |        | |
+  | |_) | .---.  _. _.| | / |  .---.  | | .---.  _    _ / /    \_|\ \  /\  / / 
+  |  __'./ /__\\[ /`\_| '' <  / /__\\ | |/ /__\\| \  | | |   _____ \ \/  \/ /  
+ _| |__| | \__. | |   | |`\ \ | \___. | || \___. \ \/ / \ \.___| |  \  /\  /   
+|_______/ \.__./[_]  [__|  \_] \.__./[___]\.__./  \  /   \.____./    \/  \/    
+                                                  / /                          
+                                                 /_/                           
+ --------------------------------------------------------------------------------
+ Please cite the main BerkeleyGW paper when using results from this calculation:
+
+ Jack Deslippe, Georgy Samsonidze, David A. Strubbe, Manish Jain, Marvin L.
+ Cohen, and Steven G. Louie, "BerkeleyGW: A Massively Parallel Computer Package
+ for the Calculation of the Quasiparticle and Optical Properties of Materials
+ and Nanostructures," Comput. Phys. Commun. 183, 1269 (2012)
+
+ Aditionally, PLEASE CITE ALL PAPERS REPORTED AT THE END OF THIS CALCULATION.
+ --------------------------------------------------------------------------------
+
+ Running MPI version (parallel)
+ Running with 180 MPI task(s)
+ Using OpenMP. Number of threads per MPI task: 1
+
+ Compilation flags:
+ - Compiler: INTEL
+ - Para. flags: MPI, OMP
+ - Math  flags: USESCALAPACK, UNPACKED, USEFFTW3, HDF5
+ - Debug flags: DEBUG
+
+ Running with verbosity level 1 (default).
+
+ We will start a new calculation from scratch.
+
+ 
+ We`ll perform a uniform sampling of the full BZ.
+ 
+ Computing the static inverse dielectric matrix
+
+ We are using matrix communication scheme
+
+ We are communicating via MPI
+
+ We are using a truncated Coulomb interaction: cell slab
+ Reading header of WFN
+ Highest occupied band (unshifted grid) = 26
+ Valence max    (unshifted grid) = -5.878238 eV
+ Conduction min (unshifted grid) = -4.281811 eV
+ Middle energy  (unshifted grid) = -5.080024 eV
+ Fermi  energy  (unshifted grid) = -5.080024 eV
+
+
+ Calculation parameters:
+ - Cutoff of the dielectric matrix (Ry): 20.00
+ - Total number of bands in the calculation: 280
+ - Number of fully occupied valence bands: 26
+ - Number of partially occ. conduction bands: 0
+ - Monkhorst-Pack q-grid for epsilon(q): 15 15 1
+ 
+ Running with 4 valence pools
+ Number of conduction bands per processor: 6
+ Number of valence bands per processor: 7
+
+ Memory available: 5468.0 MB per PE
+ Memory required for execution: 703.0 MB per PE
+ Memory required for vcoul: .0 MB per PE
+
+ Number of electrons per unit cell (from ifmax) = 26.000000
+ Number of electrons per unit cell (from occupations) = 26.000000
+ Plasma Frequency = .856942 Ry
+
+ 
+ Started reading wavefunctions (WFN) with 12880 state(s) at 03:56:40.
+ [ 03:56:40 |   0% ] state     1 / 12880.
+ [ 03:56:40 |   0% ] state     3 / 12880, remaining: 52 s.
+ [ 03:56:44 |  10% ] state  1288 / 12880, remaining: 36 s.
+ [ 03:56:49 |  20% ] state  2576 / 12880, remaining: 38 s.
+ [ 03:56:54 |  30% ] state  3864 / 12880, remaining: 34 s.
+ [ 03:57:01 |  40% ] state  5152 / 12880, remaining: 32 s.
+ [ 03:57:06 |  50% ] state  6440 / 12880, remaining: 26 s.
+ [ 03:57:10 |  60% ] state  7728 / 12880, remaining: 20 s.
+ [ 03:57:16 |  70% ] state  9016 / 12880, remaining: 16 s.
+ [ 03:57:21 |  80% ] state 10304 / 12880, remaining: 10 s.
+ [ 03:57:25 |  90% ] state 11592 / 12880, remaining: 5 s.
+ [ 03:57:30 | 100% ] state 12880 / 12880, remaining: 0 s.
+ Finished reading wavefunctions (WFN) at 03:57:30.
+ Elapsed time: 50 s.
+ 
+ Initializing epsmat.h5
+ - Screened Coulomb cutoff: 20.000 Ry
+ - Total number of bands: 280
+ - Number of q-points: 14
+
+ Scissors parameters:
+ - Valence:    es =   0.0000 eV, e0 =   0.0000 eV, edel =   0.0000
+ - Conduction: es =   0.0000 eV, e0 =   0.0000 eV, edel =   0.0000
+
+ Q  and |Q|  =  0.000000  0.066667  0.000000  0.080337
+ Q  and |Q|  =  0.000000  0.133333  0.000000  0.160673
+ Q  and |Q|  =  0.000000  0.200000  0.000000  0.241010
+ Q  and |Q|  =  0.000000  0.266667  0.000000  0.321346
+ Q  and |Q|  =  0.000000  0.333333  0.000000  0.401683
+ Q  and |Q|  =  0.000000  0.400000  0.000000  0.482019
+ Q  and |Q|  =  0.000000  0.466667  0.000000  0.562356
+ Q  and |Q|  =  0.000000  0.533333  0.000000  0.642693
+ Q  and |Q|  =  0.000000  0.600000  0.000000  0.723029
+ Q  and |Q|  =  0.000000  0.666667  0.000000  0.803366
+ Q  and |Q|  =  0.000000  0.733333  0.000000  0.883702
+ Q  and |Q|  =  0.000000  0.800000  0.000000  0.964039
+ Q  and |Q|  =  0.000000  0.866667  0.000000  1.044376
+ Q  and |Q|  =  0.000000  0.933333  0.000000  1.124712
+
+ ==================================== WARNING ==================================
+ ==
+ You have enabled spin polarization or full spinor calculations.
+ Current formalism and implementation adopted by BerkeleyGW implicitly assumes
+ time-reversal symmetry (TRS), e.g. in the standard Adler-Wiser RPA polarizabili
+ ty.
+ Running magnetic/broken-TRS systems is fundamentally against these assumptions.
+ One needs to be aware of and justify its direct usage. Use at your own risk.
+ ===============================================================================
+ ==
+ GPU acceleration is : DISABLED
+ 
+ Algorithms used:
+ - mtxel         : CPU_ALGO
+ - chi_summation : CPU_ALGO
+ 
+ Summary of the WFN files:
+ - Number of k-points in WFN: 46
+ - Number of k-points in the full BZ of WFN: 225
+
+================================================================================
+ 03:57:30   Dealing with q =  0.000000  0.066667  0.000000                1 / 14
+================================================================================
+
+ This is a regular non-zero q-point.
+ Rank of the polarizability matrix (nmtx): 2743
+ 
+ BLACS processor grid:  12 x  15; BLOCKSIZE =   32
+ 
+ Number of k-points in the irreducible BZ(q) (nrk): 120
+ 
+ Started calculation of matrix elements with 840 transition(s) at 03:57:31.
+ [ 03:57:31 |   0% ] transition   1 / 840.
+ [ 03:57:31 |   0% ] transition   3 / 840, remaining: 91 s.
+ [ 03:57:41 |  10% ] transition  84 / 840, remaining: 91 s.
+ [ 03:57:51 |  20% ] transition 168 / 840, remaining: 81 s.
+ [ 03:58:01 |  30% ] transition 252 / 840, remaining: 71 s.
+ [ 03:58:11 |  40% ] transition 336 / 840, remaining: 61 s.
+ [ 03:58:22 |  50% ] transition 420 / 840, remaining: 51 s.
+ [ 03:58:32 |  60% ] transition 504 / 840, remaining: 41 s.
+ [ 03:58:42 |  70% ] transition 588 / 840, remaining: 30 s.
+ [ 03:58:52 |  80% ] transition 672 / 840, remaining: 20 s.
+ [ 03:59:02 |  90% ] transition 756 / 840, remaining: 10 s.
+ [ 03:59:11 | 100% ] transition 840 / 840, remaining: 0 s.
+ Finished calculation of matrix elements at 03:59:12.
+ Elapsed time: 101 s.
+ 
+ Preparing simple convergence tests with 254 unoccupied bands.
+ 
+ Started building polarizability matrix with 180 processor(s) at 03:59:16.
+ [ 03:59:16 |   0% ] processor   1 / 180.
+ [ 03:59:17 |   1% ] processor   3 / 180, remaining: 43 s.
+ [ 03:59:20 |   9% ] processor  18 / 180, remaining: 37 s.
+ [ 03:59:24 |  19% ] processor  36 / 180, remaining: 32 s.
+ [ 03:59:28 |  29% ] processor  54 / 180, remaining: 28 s.
+ [ 03:59:32 |  39% ] processor  72 / 180, remaining: 24 s.
+ [ 03:59:36 |  49% ] processor  90 / 180, remaining: 20 s.
+ [ 03:59:40 |  59% ] processor 108 / 180, remaining: 16 s.
+ [ 03:59:44 |  69% ] processor 126 / 180, remaining: 12 s.
+ [ 03:59:48 |  79% ] processor 144 / 180, remaining: 8 s.
+ [ 03:59:52 |  89% ] processor 162 / 180, remaining: 4 s.
+ [ 03:59:56 |  99% ] processor 180 / 180, remaining: 0 s.
+ Finished building polarizability matrix at 03:59:56.
+ Elapsed time: 40 s.
+ 
+ q-pt      1: Head of Epsilon         =    3.639410025417894E+000   1.792888888549213E-018
+ q-pt      1: Epsilon(2,2)            =    3.108288522611733E+000   2.246643562050822E-018
+ q-pt      1: Head of Epsilon Inverse =    5.584677851966122E-001   4.878909776184770E-019
+ q-pt      1: Epsilon Inverse(2,2)    =    6.942779712851379E-001  -1.626303258728257E-019
+
+ Writing dielectric matrix to file
+ Ok
+
+================================================================================
+ 03:59:57   Dealing with q =  0.000000  0.133333  0.000000                2 / 14
+================================================================================
+
+ This is a regular non-zero q-point.
+ Rank of the polarizability matrix (nmtx): 2705
+ 
+ BLACS processor grid:  12 x  15; BLOCKSIZE =   32
+ 
+ Number of k-points in the irreducible BZ(q) (nrk): 120
+ 
+ Started calculation of matrix elements with 840 transition(s) at 03:59:58.
+ [ 03:59:58 |   0% ] transition   1 / 840.
+ [ 03:59:58 |   0% ] transition   3 / 840, remaining: 90 s.
+ [ 04:00:08 |  10% ] transition  84 / 840, remaining: 90 s.
+ [ 04:00:18 |  20% ] transition 168 / 840, remaining: 81 s.
+ [ 04:00:28 |  30% ] transition 252 / 840, remaining: 71 s.
+ [ 04:00:38 |  40% ] transition 336 / 840, remaining: 61 s.
+ [ 04:00:48 |  50% ] transition 420 / 840, remaining: 51 s.
+ [ 04:00:58 |  60% ] transition 504 / 840, remaining: 41 s.
+ [ 04:01:08 |  70% ] transition 588 / 840, remaining: 30 s.
+ [ 04:01:18 |  80% ] transition 672 / 840, remaining: 20 s.
+ [ 04:01:29 |  90% ] transition 756 / 840, remaining: 10 s.
+ [ 04:01:38 | 100% ] transition 840 / 840, remaining: 0 s.
+ Finished calculation of matrix elements at 04:01:38.
+ Elapsed time: 100 s.
+ 
+ Preparing simple convergence tests with 254 unoccupied bands.
+ 
+ Started building polarizability matrix with 180 processor(s) at 04:01:43.
+ [ 04:01:43 |   0% ] processor   1 / 180.
+ [ 04:01:44 |   1% ] processor   3 / 180, remaining: 46 s.
+ [ 04:01:47 |   9% ] processor  18 / 180, remaining: 35 s.
+ [ 04:01:51 |  19% ] processor  36 / 180, remaining: 30 s.
+ [ 04:01:54 |  29% ] processor  54 / 180, remaining: 27 s.
+ [ 04:01:58 |  39% ] processor  72 / 180, remaining: 23 s.
+ [ 04:02:02 |  49% ] processor  90 / 180, remaining: 19 s.
+ [ 04:02:06 |  59% ] processor 108 / 180, remaining: 15 s.
+ [ 04:02:10 |  69% ] processor 126 / 180, remaining: 12 s.
+ [ 04:02:13 |  79% ] processor 144 / 180, remaining: 8 s.
+ [ 04:02:17 |  89% ] processor 162 / 180, remaining: 4 s.
+ [ 04:02:21 |  99% ] processor 180 / 180, remaining: 0 s.
+ Finished building polarizability matrix at 04:02:21.
+ Elapsed time: 37 s.
+ 
+ q-pt      2: Head of Epsilon         =    3.577717651355181E+000  -2.404086638583464E-018
+ q-pt      2: Epsilon(2,2)            =    3.144643200592271E+000  -7.794959732216945E-019
+ q-pt      2: Head of Epsilon Inverse =    6.739495369912598E-001   2.873135757086587E-018
+ q-pt      2: Epsilon Inverse(2,2)    =    7.236608339367359E-001   1.138412281109780E-018
+
+ Writing dielectric matrix to file
+ Ok
+
+================================================================================
+ 04:02:23   Dealing with q =  0.000000  0.200000  0.000000                3 / 14
+================================================================================
+
+ This is a regular non-zero q-point.
+ Rank of the polarizability matrix (nmtx): 2699
+ 
+ BLACS processor grid:  12 x  15; BLOCKSIZE =   32
+ 
+ Number of k-points in the irreducible BZ(q) (nrk): 120
+ 
+ Started calculation of matrix elements with 840 transition(s) at 04:02:23.
+ [ 04:02:23 |   0% ] transition   1 / 840.
+ [ 04:02:23 |   0% ] transition   3 / 840, remaining: 90 s.
+ [ 04:02:33 |  10% ] transition  84 / 840, remaining: 90 s.
+ [ 04:02:43 |  20% ] transition 168 / 840, remaining: 81 s.
+ [ 04:02:53 |  30% ] transition 252 / 840, remaining: 71 s.
+ [ 04:03:03 |  40% ] transition 336 / 840, remaining: 61 s.
+ [ 04:03:14 |  50% ] transition 420 / 840, remaining: 51 s.
+ [ 04:03:24 |  60% ] transition 504 / 840, remaining: 41 s.
+ [ 04:03:34 |  70% ] transition 588 / 840, remaining: 30 s.
+ [ 04:03:44 |  80% ] transition 672 / 840, remaining: 20 s.
+ [ 04:03:54 |  90% ] transition 756 / 840, remaining: 10 s.
+ [ 04:04:03 | 100% ] transition 840 / 840, remaining: 0 s.
+ Finished calculation of matrix elements at 04:04:03.
+ Elapsed time: 100 s.
+ 
+ Preparing simple convergence tests with 254 unoccupied bands.
+ 
+ Started building polarizability matrix with 180 processor(s) at 04:04:09.
+ [ 04:04:09 |   0% ] processor   1 / 180.
+ [ 04:04:09 |   1% ] processor   3 / 180, remaining: 46 s.
+ [ 04:04:12 |   9% ] processor  18 / 180, remaining: 33 s.
+ [ 04:04:16 |  19% ] processor  36 / 180, remaining: 29 s.
+ [ 04:04:20 |  29% ] processor  54 / 180, remaining: 26 s.
+ [ 04:04:23 |  39% ] processor  72 / 180, remaining: 22 s.
+ [ 04:04:27 |  49% ] processor  90 / 180, remaining: 19 s.
+ [ 04:04:31 |  59% ] processor 108 / 180, remaining: 15 s.
+ [ 04:04:35 |  69% ] processor 126 / 180, remaining: 11 s.
+ [ 04:04:38 |  79% ] processor 144 / 180, remaining: 8 s.
+ [ 04:04:42 |  89% ] processor 162 / 180, remaining: 4 s.
+ [ 04:04:46 |  99% ] processor 180 / 180, remaining: 0 s.
+ Finished building polarizability matrix at 04:04:46.
+ Elapsed time: 37 s.
+ 
+ q-pt      3: Head of Epsilon         =    3.184958350832558E+000  -8.471152106753313E-019
+ q-pt      3: Epsilon(2,2)            =    2.943533615282734E+000   5.843017018739273E-019
+ q-pt      3: Head of Epsilon Inverse =    7.344343374338504E-001   3.252606517456513E-019
+ q-pt      3: Epsilon Inverse(2,2)    =    7.552630444116315E-001   1.788933584601082E-018
+
+ Writing dielectric matrix to file
+ Ok
+
+================================================================================
+ 04:04:49   Dealing with q =  0.000000  0.266667  0.000000                4 / 14
+================================================================================
+
+ This is a regular non-zero q-point.
+ Rank of the polarizability matrix (nmtx): 2679
+ 
+ BLACS processor grid:  12 x  15; BLOCKSIZE =   32
+ 
+ Number of k-points in the irreducible BZ(q) (nrk): 120
+ 
+ Started calculation of matrix elements with 840 transition(s) at 04:04:49.
+ [ 04:04:49 |   0% ] transition   1 / 840.
+ [ 04:04:49 |   0% ] transition   3 / 840, remaining: 90 s.
+ [ 04:04:59 |  10% ] transition  84 / 840, remaining: 90 s.
+ [ 04:05:09 |  20% ] transition 168 / 840, remaining: 80 s.
+ [ 04:05:19 |  30% ] transition 252 / 840, remaining: 70 s.
+ [ 04:05:29 |  40% ] transition 336 / 840, remaining: 61 s.
+ [ 04:05:39 |  50% ] transition 420 / 840, remaining: 50 s.
+ [ 04:05:50 |  60% ] transition 504 / 840, remaining: 40 s.
+ [ 04:06:00 |  70% ] transition 588 / 840, remaining: 30 s.
+ [ 04:06:10 |  80% ] transition 672 / 840, remaining: 20 s.
+ [ 04:06:20 |  90% ] transition 756 / 840, remaining: 10 s.
+ [ 04:06:29 | 100% ] transition 840 / 840, remaining: 0 s.
+ Finished calculation of matrix elements at 04:06:29.
+ Elapsed time: 100 s.
+ 
+ Preparing simple convergence tests with 254 unoccupied bands.
+ 
+ Started building polarizability matrix with 180 processor(s) at 04:06:34.
+ [ 04:06:34 |   0% ] processor   1 / 180.
+ [ 04:06:35 |   1% ] processor   3 / 180, remaining: 40 s.
+ [ 04:06:38 |   9% ] processor  18 / 180, remaining: 31 s.
+ [ 04:06:41 |  19% ] processor  36 / 180, remaining: 28 s.
+ [ 04:06:45 |  29% ] processor  54 / 180, remaining: 25 s.
+ [ 04:06:48 |  39% ] processor  72 / 180, remaining: 22 s.
+ [ 04:06:52 |  49% ] processor  90 / 180, remaining: 18 s.
+ [ 04:06:55 |  59% ] processor 108 / 180, remaining: 14 s.
+ [ 04:06:59 |  69% ] processor 126 / 180, remaining: 11 s.
+ [ 04:07:02 |  79% ] processor 144 / 180, remaining: 7 s.
+ [ 04:07:06 |  89% ] processor 162 / 180, remaining: 4 s.
+ [ 04:07:09 |  99% ] processor 180 / 180, remaining: 0 s.
+ Finished building polarizability matrix at 04:07:09.
+ Elapsed time: 35 s.
+ 
+ q-pt      4: Head of Epsilon         =    2.774831096526723E+000   3.744496888742241E-021
+ q-pt      4: Epsilon(2,2)            =    2.636664400463475E+000  -1.491490721590635E-018
+ q-pt      4: Head of Epsilon Inverse =    7.709169496827397E-001   1.626303258728257E-018
+ q-pt      4: Epsilon Inverse(2,2)    =    7.814968516801497E-001   2.602085213965211E-018
+
+ Writing dielectric matrix to file
+ Ok
+
+================================================================================
+ 04:07:12   Dealing with q =  0.000000  0.333333  0.000000                5 / 14
+================================================================================
+
+ This is a regular non-zero q-point.
+ Rank of the polarizability matrix (nmtx): 2668
+ 
+ BLACS processor grid:  12 x  15; BLOCKSIZE =   32
+ 
+ Number of k-points in the irreducible BZ(q) (nrk): 120
+ 
+ Started calculation of matrix elements with 840 transition(s) at 04:07:13.
+ [ 04:07:13 |   0% ] transition   1 / 840.
+ [ 04:07:13 |   0% ] transition   3 / 840, remaining: 77 s.
+ [ 04:07:22 |  10% ] transition  84 / 840, remaining: 80 s.
+ [ 04:07:31 |  20% ] transition 168 / 840, remaining: 71 s.
+ [ 04:07:40 |  30% ] transition 252 / 840, remaining: 62 s.
+ [ 04:07:49 |  40% ] transition 336 / 840, remaining: 54 s.
+ [ 04:07:57 |  50% ] transition 420 / 840, remaining: 45 s.
+ [ 04:08:06 |  60% ] transition 504 / 840, remaining: 36 s.
+ [ 04:08:15 |  70% ] transition 588 / 840, remaining: 27 s.
+ [ 04:08:24 |  80% ] transition 672 / 840, remaining: 18 s.
+ [ 04:08:33 |  90% ] transition 756 / 840, remaining: 9 s.
+ [ 04:08:42 | 100% ] transition 840 / 840, remaining: 0 s.
+ Finished calculation of matrix elements at 04:08:42.
+ Elapsed time: 89 s.
+ 
+ Preparing simple convergence tests with 254 unoccupied bands.
+ 
+ Started building polarizability matrix with 180 processor(s) at 04:08:47.
+ [ 04:08:47 |   0% ] processor   1 / 180.
+ [ 04:08:47 |   1% ] processor   3 / 180, remaining: 37 s.
+ [ 04:08:51 |   9% ] processor  18 / 180, remaining: 34 s.
+ [ 04:08:54 |  19% ] processor  36 / 180, remaining: 30 s.
+ [ 04:08:58 |  29% ] processor  54 / 180, remaining: 26 s.
+ [ 04:09:02 |  39% ] processor  72 / 180, remaining: 22 s.
+ [ 04:09:05 |  49% ] processor  90 / 180, remaining: 19 s.
+ [ 04:09:09 |  59% ] processor 108 / 180, remaining: 15 s.
+ [ 04:09:12 |  69% ] processor 126 / 180, remaining: 11 s.
+ [ 04:09:16 |  79% ] processor 144 / 180, remaining: 7 s.
+ [ 04:09:19 |  89% ] processor 162 / 180, remaining: 4 s.
+ [ 04:09:23 |  99% ] processor 180 / 180, remaining: 0 s.
+ Finished building polarizability matrix at 04:09:23.
+ Elapsed time: 36 s.
+ 
+ q-pt      5: Head of Epsilon         =    2.411403742752316E+000  -1.523584971587115E-018
+ q-pt      5: Epsilon(2,2)            =    2.328260358790359E+000   1.316723451364151E-019
+ q-pt      5: Head of Epsilon Inverse =    7.967720243085183E-001   1.192622389734055E-018
+ q-pt      5: Epsilon Inverse(2,2)    =    8.030249876375625E-001   8.673617379884035E-019
+
+ Writing dielectric matrix to file
+ Ok
+
+================================================================================
+ 04:09:26   Dealing with q =  0.000000  0.400000  0.000000                6 / 14
+================================================================================
+
+ This is a regular non-zero q-point.
+ Rank of the polarizability matrix (nmtx): 2682
+ 
+ BLACS processor grid:  12 x  15; BLOCKSIZE =   32
+ 
+ Number of k-points in the irreducible BZ(q) (nrk): 120
+ 
+ Started calculation of matrix elements with 840 transition(s) at 04:09:26.
+ [ 04:09:26 |   0% ] transition   1 / 840.
+ [ 04:09:27 |   0% ] transition   3 / 840, remaining: 80 s.
+ [ 04:09:35 |  10% ] transition  84 / 840, remaining: 80 s.
+ [ 04:09:44 |  20% ] transition 168 / 840, remaining: 72 s.
+ [ 04:09:53 |  30% ] transition 252 / 840, remaining: 63 s.
+ [ 04:10:02 |  40% ] transition 336 / 840, remaining: 54 s.
+ [ 04:10:11 |  50% ] transition 420 / 840, remaining: 45 s.
+ [ 04:10:20 |  60% ] transition 504 / 840, remaining: 36 s.
+ [ 04:10:29 |  70% ] transition 588 / 840, remaining: 27 s.
+ [ 04:10:38 |  80% ] transition 672 / 840, remaining: 18 s.
+ [ 04:10:47 |  90% ] transition 756 / 840, remaining: 9 s.
+ [ 04:10:56 | 100% ] transition 840 / 840, remaining: 0 s.
+ Finished calculation of matrix elements at 04:10:56.
+ Elapsed time: 90 s.
+ 
+ Preparing simple convergence tests with 254 unoccupied bands.
+ 
+ Started building polarizability matrix with 180 processor(s) at 04:11:00.
+ [ 04:11:00 |   0% ] processor   1 / 180.
+ [ 04:11:01 |   1% ] processor   3 / 180, remaining: 34 s.
+ [ 04:11:04 |   9% ] processor  18 / 180, remaining: 32 s.
+ [ 04:11:07 |  19% ] processor  36 / 180, remaining: 28 s.
+ [ 04:11:11 |  29% ] processor  54 / 180, remaining: 25 s.
+ [ 04:11:14 |  39% ] processor  72 / 180, remaining: 21 s.
+ [ 04:11:18 |  49% ] processor  90 / 180, remaining: 18 s.
+ [ 04:11:21 |  59% ] processor 108 / 180, remaining: 14 s.
+ [ 04:11:24 |  69% ] processor 126 / 180, remaining: 11 s.
+ [ 04:11:28 |  79% ] processor 144 / 180, remaining: 7 s.
+ [ 04:11:31 |  89% ] processor 162 / 180, remaining: 4 s.
+ [ 04:11:35 |  99% ] processor 180 / 180, remaining: 0 s.
+ Finished building polarizability matrix at 04:11:35.
+ Elapsed time: 35 s.
+ 
+ q-pt      6: Head of Epsilon         =    2.110856453197895E+000   1.501051040964699E-018
+ q-pt      6: Epsilon(2,2)            =    2.059126940126943E+000  -2.004554878932585E-018
+ q-pt      6: Head of Epsilon Inverse =    8.172298114210728E-001   3.686287386450715E-018
+ q-pt      6: Epsilon Inverse(2,2)    =    8.212824692819544E-001  -8.131516293641283E-020
+
+ Writing dielectric matrix to file
+ Ok
+
+================================================================================
+ 04:11:37   Dealing with q =  0.000000  0.466667  0.000000                7 / 14
+================================================================================
+
+ This is a regular non-zero q-point.
+ Rank of the polarizability matrix (nmtx): 2682
+ 
+ BLACS processor grid:  12 x  15; BLOCKSIZE =   32
+ 
+ Number of k-points in the irreducible BZ(q) (nrk): 120
+ 
+ Started calculation of matrix elements with 840 transition(s) at 04:11:38.
+ [ 04:11:38 |   0% ] transition   1 / 840.
+ [ 04:11:38 |   0% ] transition   3 / 840, remaining: 80 s.
+ [ 04:11:47 |  10% ] transition  84 / 840, remaining: 80 s.
+ [ 04:11:55 |  20% ] transition 168 / 840, remaining: 71 s.
+ [ 04:12:04 |  30% ] transition 252 / 840, remaining: 63 s.
+ [ 04:12:13 |  40% ] transition 336 / 840, remaining: 54 s.
+ [ 04:12:22 |  50% ] transition 420 / 840, remaining: 45 s.
+ [ 04:12:31 |  60% ] transition 504 / 840, remaining: 36 s.
+ [ 04:12:40 |  70% ] transition 588 / 840, remaining: 27 s.
+ [ 04:12:49 |  80% ] transition 672 / 840, remaining: 18 s.
+ [ 04:12:58 |  90% ] transition 756 / 840, remaining: 9 s.
+ [ 04:13:07 | 100% ] transition 840 / 840, remaining: 0 s.
+ Finished calculation of matrix elements at 04:13:07.
+ Elapsed time: 89 s.
+ 
+ Preparing simple convergence tests with 254 unoccupied bands.
+ 
+ Started building polarizability matrix with 180 processor(s) at 04:13:11.
+ [ 04:13:11 |   0% ] processor   1 / 180.
+ [ 04:13:12 |   1% ] processor   3 / 180, remaining: 45 s.
+ [ 04:13:15 |   9% ] processor  18 / 180, remaining: 32 s.
+ [ 04:13:18 |  19% ] processor  36 / 180, remaining: 28 s.
+ [ 04:13:22 |  29% ] processor  54 / 180, remaining: 24 s.
+ [ 04:13:25 |  39% ] processor  72 / 180, remaining: 21 s.
+ [ 04:13:29 |  49% ] processor  90 / 180, remaining: 18 s.
+ [ 04:13:32 |  59% ] processor 108 / 180, remaining: 14 s.
+ [ 04:13:36 |  69% ] processor 126 / 180, remaining: 11 s.
+ [ 04:13:40 |  79% ] processor 144 / 180, remaining: 7 s.
+ [ 04:13:43 |  89% ] processor 162 / 180, remaining: 4 s.
+ [ 04:13:47 |  99% ] processor 180 / 180, remaining: 0 s.
+ Finished building polarizability matrix at 04:13:47.
+ Elapsed time: 35 s.
+ 
+ q-pt      7: Head of Epsilon         =    1.872128381277595E+000   1.837684504241272E-018
+ q-pt      7: Epsilon(2,2)            =    1.839220773311495E+000   2.803599116218562E-019
+ q-pt      7: Head of Epsilon Inverse =    8.344702562670903E-001  -6.505213034913027E-018
+ q-pt      7: Epsilon Inverse(2,2)    =    8.372294125398440E-001   2.181956872127078E-018
+
+ Writing dielectric matrix to file
+ Ok
+
+================================================================================
+ 04:13:49   Dealing with q =  0.000000  0.533333  0.000000                8 / 14
+================================================================================
+
+ This is a regular non-zero q-point.
+ Rank of the polarizability matrix (nmtx): 2682
+ 
+ BLACS processor grid:  12 x  15; BLOCKSIZE =   32
+ 
+ Number of k-points in the irreducible BZ(q) (nrk): 120
+ 
+ Started calculation of matrix elements with 840 transition(s) at 04:13:49.
+ [ 04:13:49 |   0% ] transition   1 / 840.
+ [ 04:13:49 |   0% ] transition   3 / 840, remaining: 80 s.
+ [ 04:13:58 |  10% ] transition  84 / 840, remaining: 80 s.
+ [ 04:14:07 |  20% ] transition 168 / 840, remaining: 72 s.
+ [ 04:14:16 |  30% ] transition 252 / 840, remaining: 63 s.
+ [ 04:14:25 |  40% ] transition 336 / 840, remaining: 54 s.
+ [ 04:14:34 |  50% ] transition 420 / 840, remaining: 45 s.
+ [ 04:14:43 |  60% ] transition 504 / 840, remaining: 36 s.
+ [ 04:14:52 |  70% ] transition 588 / 840, remaining: 27 s.
+ [ 04:15:01 |  80% ] transition 672 / 840, remaining: 18 s.
+ [ 04:15:10 |  90% ] transition 756 / 840, remaining: 9 s.
+ [ 04:15:18 | 100% ] transition 840 / 840, remaining: 0 s.
+ Finished calculation of matrix elements at 04:15:19.
+ Elapsed time: 90 s.
+ 
+ Preparing simple convergence tests with 254 unoccupied bands.
+ 
+ Started building polarizability matrix with 180 processor(s) at 04:15:23.
+ [ 04:15:23 |   0% ] processor   1 / 180.
+ [ 04:15:23 |   1% ] processor   3 / 180, remaining: 43 s.
+ [ 04:15:27 |   9% ] processor  18 / 180, remaining: 33 s.
+ [ 04:15:30 |  19% ] processor  36 / 180, remaining: 30 s.
+ [ 04:15:34 |  29% ] processor  54 / 180, remaining: 26 s.
+ [ 04:15:38 |  39% ] processor  72 / 180, remaining: 22 s.
+ [ 04:15:41 |  49% ] processor  90 / 180, remaining: 19 s.
+ [ 04:15:45 |  59% ] processor 108 / 180, remaining: 15 s.
+ [ 04:15:48 |  69% ] processor 126 / 180, remaining: 11 s.
+ [ 04:15:51 |  79% ] processor 144 / 180, remaining: 7 s.
+ [ 04:15:55 |  89% ] processor 162 / 180, remaining: 4 s.
+ [ 04:15:59 |  99% ] processor 180 / 180, remaining: 0 s.
+ Finished building polarizability matrix at 04:15:59.
+ Elapsed time: 36 s.
+ 
+ q-pt      8: Head of Epsilon         =    1.872128381252961E+000  -3.534889893616056E-019
+ q-pt      8: Epsilon(2,2)            =    1.839220773288050E+000  -7.304316003668904E-019
+ q-pt      8: Head of Epsilon Inverse =    8.344702562671797E-001  -2.114194236346734E-018
+ q-pt      8: Epsilon Inverse(2,2)    =    8.372294125399324E-001   9.757819552369540E-019
+
+ Writing dielectric matrix to file
+ Ok
+
+================================================================================
+ 04:16:01   Dealing with q =  0.000000  0.600000  0.000000                9 / 14
+================================================================================
+
+ This is a regular non-zero q-point.
+ Rank of the polarizability matrix (nmtx): 2682
+ 
+ BLACS processor grid:  12 x  15; BLOCKSIZE =   32
+ 
+ Number of k-points in the irreducible BZ(q) (nrk): 120
+ 
+ Started calculation of matrix elements with 840 transition(s) at 04:16:02.
+ [ 04:16:02 |   0% ] transition   1 / 840.
+ [ 04:16:02 |   0% ] transition   3 / 840, remaining: 80 s.
+ [ 04:16:11 |  10% ] transition  84 / 840, remaining: 81 s.
+ [ 04:16:20 |  20% ] transition 168 / 840, remaining: 72 s.
+ [ 04:16:29 |  30% ] transition 252 / 840, remaining: 63 s.
+ [ 04:16:38 |  40% ] transition 336 / 840, remaining: 54 s.
+ [ 04:16:47 |  50% ] transition 420 / 840, remaining: 45 s.
+ [ 04:16:56 |  60% ] transition 504 / 840, remaining: 36 s.
+ [ 04:17:05 |  70% ] transition 588 / 840, remaining: 27 s.
+ [ 04:17:14 |  80% ] transition 672 / 840, remaining: 18 s.
+ [ 04:17:23 |  90% ] transition 756 / 840, remaining: 9 s.
+ [ 04:17:31 | 100% ] transition 840 / 840, remaining: 0 s.
+ Finished calculation of matrix elements at 04:17:31.
+ Elapsed time: 90 s.
+ 
+ Preparing simple convergence tests with 254 unoccupied bands.
+ 
+ Started building polarizability matrix with 180 processor(s) at 04:17:36.
+ [ 04:17:36 |   0% ] processor   1 / 180.
+ [ 04:17:36 |   1% ] processor   3 / 180, remaining: 36 s.
+ [ 04:17:39 |   9% ] processor  18 / 180, remaining: 31 s.
+ [ 04:17:43 |  19% ] processor  36 / 180, remaining: 29 s.
+ [ 04:17:46 |  29% ] processor  54 / 180, remaining: 25 s.
+ [ 04:17:50 |  39% ] processor  72 / 180, remaining: 22 s.
+ [ 04:17:54 |  49% ] processor  90 / 180, remaining: 18 s.
+ [ 04:17:57 |  59% ] processor 108 / 180, remaining: 14 s.
+ [ 04:18:00 |  69% ] processor 126 / 180, remaining: 11 s.
+ [ 04:18:04 |  79% ] processor 144 / 180, remaining: 7 s.
+ [ 04:18:08 |  89% ] processor 162 / 180, remaining: 4 s.
+ [ 04:18:11 |  99% ] processor 180 / 180, remaining: 0 s.
+ Finished building polarizability matrix at 04:18:11.
+ Elapsed time: 36 s.
+ 
+ q-pt      9: Head of Epsilon         =    2.110856453161144E+000   2.427163982874570E-018
+ q-pt      9: Epsilon(2,2)            =    2.059126940094624E+000   4.705191160867577E-019
+ q-pt      9: Head of Epsilon Inverse =    8.172298114216503E-001   2.493664996716660E-018
+ q-pt      9: Epsilon Inverse(2,2)    =    8.212824692823605E-001   0.000000000000000E+000
+
+ Writing dielectric matrix to file
+ Ok
+
+================================================================================
+ 04:18:13   Dealing with q =  0.000000  0.666667  0.000000               10 / 14
+================================================================================
+
+ This is a regular non-zero q-point.
+ Rank of the polarizability matrix (nmtx): 2668
+ 
+ BLACS processor grid:  12 x  15; BLOCKSIZE =   32
+ 
+ Number of k-points in the irreducible BZ(q) (nrk): 120
+ 
+ Started calculation of matrix elements with 840 transition(s) at 04:18:14.
+ [ 04:18:14 |   0% ] transition   1 / 840.
+ [ 04:18:14 |   0% ] transition   3 / 840, remaining: 80 s.
+ [ 04:18:22 |  10% ] transition  84 / 840, remaining: 80 s.
+ [ 04:18:31 |  20% ] transition 168 / 840, remaining: 72 s.
+ [ 04:18:40 |  30% ] transition 252 / 840, remaining: 63 s.
+ [ 04:18:49 |  40% ] transition 336 / 840, remaining: 54 s.
+ [ 04:18:58 |  50% ] transition 420 / 840, remaining: 45 s.
+ [ 04:19:07 |  60% ] transition 504 / 840, remaining: 36 s.
+ [ 04:19:16 |  70% ] transition 588 / 840, remaining: 27 s.
+ [ 04:19:25 |  80% ] transition 672 / 840, remaining: 18 s.
+ [ 04:19:34 |  90% ] transition 756 / 840, remaining: 9 s.
+ [ 04:19:43 | 100% ] transition 840 / 840, remaining: 0 s.
+ Finished calculation of matrix elements at 04:19:43.
+ Elapsed time: 90 s.
+ 
+ Preparing simple convergence tests with 254 unoccupied bands.
+ 
+ Started building polarizability matrix with 180 processor(s) at 04:19:47.
+ [ 04:19:47 |   0% ] processor   1 / 180.
+ [ 04:19:48 |   1% ] processor   3 / 180, remaining: 39 s.
+ [ 04:19:50 |   9% ] processor  18 / 180, remaining: 31 s.
+ [ 04:19:54 |  19% ] processor  36 / 180, remaining: 28 s.
+ [ 04:19:58 |  29% ] processor  54 / 180, remaining: 25 s.
+ [ 04:20:01 |  39% ] processor  72 / 180, remaining: 21 s.
+ [ 04:20:05 |  49% ] processor  90 / 180, remaining: 18 s.
+ [ 04:20:08 |  59% ] processor 108 / 180, remaining: 14 s.
+ [ 04:20:12 |  69% ] processor 126 / 180, remaining: 11 s.
+ [ 04:20:15 |  79% ] processor 144 / 180, remaining: 7 s.
+ [ 04:20:19 |  89% ] processor 162 / 180, remaining: 4 s.
+ [ 04:20:22 |  99% ] processor 180 / 180, remaining: 0 s.
+ Finished building polarizability matrix at 04:20:22.
+ Elapsed time: 35 s.
+ 
+ q-pt     10: Head of Epsilon         =    2.411403742706144E+000   2.894958509270340E-019
+ q-pt     10: Epsilon(2,2)            =    2.328260358752628E+000   7.095171812896642E-019
+ q-pt     10: Head of Epsilon Inverse =    7.967720243094840E-001  -3.035766082959412E-018
+ q-pt     10: Epsilon Inverse(2,2)    =    8.030249876382043E-001  -1.788933584601082E-018
+
+ Writing dielectric matrix to file
+ Ok
+
+================================================================================
+ 04:20:25   Dealing with q =  0.000000  0.733333  0.000000               11 / 14
+================================================================================
+
+ This is a regular non-zero q-point.
+ Rank of the polarizability matrix (nmtx): 2679
+ 
+ BLACS processor grid:  12 x  15; BLOCKSIZE =   32
+ 
+ Number of k-points in the irreducible BZ(q) (nrk): 120
+ 
+ Started calculation of matrix elements with 840 transition(s) at 04:20:25.
+ [ 04:20:25 |   0% ] transition   1 / 840.
+ [ 04:20:25 |   0% ] transition   3 / 840, remaining: 90 s.
+ [ 04:20:35 |  10% ] transition  84 / 840, remaining: 89 s.
+ [ 04:20:45 |  20% ] transition 168 / 840, remaining: 80 s.
+ [ 04:20:55 |  30% ] transition 252 / 840, remaining: 70 s.
+ [ 04:21:05 |  40% ] transition 336 / 840, remaining: 60 s.
+ [ 04:21:15 |  50% ] transition 420 / 840, remaining: 50 s.
+ [ 04:21:25 |  60% ] transition 504 / 840, remaining: 40 s.
+ [ 04:21:35 |  70% ] transition 588 / 840, remaining: 30 s.
+ [ 04:21:45 |  80% ] transition 672 / 840, remaining: 20 s.
+ [ 04:21:55 |  90% ] transition 756 / 840, remaining: 10 s.
+ [ 04:22:04 | 100% ] transition 840 / 840, remaining: 0 s.
+ Finished calculation of matrix elements at 04:22:04.
+ Elapsed time: 99 s.
+ 
+ Preparing simple convergence tests with 254 unoccupied bands.
+ 
+ Started building polarizability matrix with 180 processor(s) at 04:22:11.
+ [ 04:22:11 |   0% ] processor   1 / 180.
+ [ 04:22:11 |   1% ] processor   3 / 180, remaining: 52 s.
+ [ 04:22:14 |   9% ] processor  18 / 180, remaining: 33 s.
+ [ 04:22:18 |  19% ] processor  36 / 180, remaining: 29 s.
+ [ 04:22:21 |  29% ] processor  54 / 180, remaining: 25 s.
+ [ 04:22:24 |  39% ] processor  72 / 180, remaining: 21 s.
+ [ 04:22:28 |  49% ] processor  90 / 180, remaining: 18 s.
+ [ 04:22:32 |  59% ] processor 108 / 180, remaining: 14 s.
+ [ 04:22:35 |  69% ] processor 126 / 180, remaining: 11 s.
+ [ 04:22:39 |  79% ] processor 144 / 180, remaining: 7 s.
+ [ 04:22:42 |  89% ] processor 162 / 180, remaining: 4 s.
+ [ 04:22:46 |  99% ] processor 180 / 180, remaining: 0 s.
+ Finished building polarizability matrix at 04:22:46.
+ Elapsed time: 35 s.
+ 
+ q-pt     11: Head of Epsilon         =    2.774831096479730E+000  -3.845855349035762E-019
+ q-pt     11: Epsilon(2,2)            =    2.636664400427110E+000  -5.195197921378543E-019
+ q-pt     11: Head of Epsilon Inverse =    7.709169496836041E-001  -5.421010862427522E-019
+ q-pt     11: Epsilon Inverse(2,2)    =    7.814968516807113E-001  -7.318364664277155E-019
+
+ Writing dielectric matrix to file
+ Ok
+
+================================================================================
+ 04:22:48   Dealing with q =  0.000000  0.800000  0.000000               12 / 14
+================================================================================
+
+ This is a regular non-zero q-point.
+ Rank of the polarizability matrix (nmtx): 2699
+ 
+ BLACS processor grid:  12 x  15; BLOCKSIZE =   32
+ 
+ Number of k-points in the irreducible BZ(q) (nrk): 120
+ 
+ Started calculation of matrix elements with 840 transition(s) at 04:22:48.
+ [ 04:22:48 |   0% ] transition   1 / 840.
+ [ 04:22:48 |   0% ] transition   3 / 840, remaining: 92 s.
+ [ 04:22:58 |  10% ] transition  84 / 840, remaining: 91 s.
+ [ 04:23:08 |  20% ] transition 168 / 840, remaining: 81 s.
+ [ 04:23:18 |  30% ] transition 252 / 840, remaining: 71 s.
+ [ 04:23:28 |  40% ] transition 336 / 840, remaining: 61 s.
+ [ 04:23:38 |  50% ] transition 420 / 840, remaining: 51 s.
+ [ 04:23:49 |  60% ] transition 504 / 840, remaining: 41 s.
+ [ 04:23:59 |  70% ] transition 588 / 840, remaining: 30 s.
+ [ 04:24:09 |  80% ] transition 672 / 840, remaining: 20 s.
+ [ 04:24:19 |  90% ] transition 756 / 840, remaining: 10 s.
+ [ 04:24:28 | 100% ] transition 840 / 840, remaining: 0 s.
+ Finished calculation of matrix elements at 04:24:28.
+ Elapsed time: 100 s.
+ 
+ Preparing simple convergence tests with 254 unoccupied bands.
+ 
+ Started building polarizability matrix with 180 processor(s) at 04:24:33.
+ [ 04:24:33 |   0% ] processor   1 / 180.
+ [ 04:24:34 |   1% ] processor   3 / 180, remaining: 38 s.
+ [ 04:24:37 |   9% ] processor  18 / 180, remaining: 33 s.
+ [ 04:24:40 |  19% ] processor  36 / 180, remaining: 29 s.
+ [ 04:24:44 |  29% ] processor  54 / 180, remaining: 26 s.
+ [ 04:24:48 |  39% ] processor  72 / 180, remaining: 23 s.
+ [ 04:24:52 |  49% ] processor  90 / 180, remaining: 19 s.
+ [ 04:24:55 |  59% ] processor 108 / 180, remaining: 15 s.
+ [ 04:24:59 |  69% ] processor 126 / 180, remaining: 11 s.
+ [ 04:25:03 |  79% ] processor 144 / 180, remaining: 8 s.
+ [ 04:25:06 |  89% ] processor 162 / 180, remaining: 4 s.
+ [ 04:25:10 |  99% ] processor 180 / 180, remaining: 0 s.
+ Finished building polarizability matrix at 04:25:10.
+ Elapsed time: 37 s.
+ 
+ q-pt     12: Head of Epsilon         =    3.184958350805417E+000   1.110344859254595E-018
+ q-pt     12: Epsilon(2,2)            =    2.943533615263250E+000   2.561048191419264E-018
+ q-pt     12: Head of Epsilon Inverse =    7.344343374340783E-001   1.301042606982605E-018
+ q-pt     12: Epsilon Inverse(2,2)    =    7.552630444118040E-001  -9.757819552369540E-019
+
+ Writing dielectric matrix to file
+ Ok
+
+================================================================================
+ 04:25:12   Dealing with q =  0.000000  0.866667  0.000000               13 / 14
+================================================================================
+
+ This is a regular non-zero q-point.
+ Rank of the polarizability matrix (nmtx): 2705
+ 
+ BLACS processor grid:  12 x  15; BLOCKSIZE =   32
+ 
+ Number of k-points in the irreducible BZ(q) (nrk): 120
+ 
+ Started calculation of matrix elements with 840 transition(s) at 04:25:13.
+ [ 04:25:13 |   0% ] transition   1 / 840.
+ [ 04:25:13 |   0% ] transition   3 / 840, remaining: 92 s.
+ [ 04:25:23 |  10% ] transition  84 / 840, remaining: 91 s.
+ [ 04:25:33 |  20% ] transition 168 / 840, remaining: 81 s.
+ [ 04:25:43 |  30% ] transition 252 / 840, remaining: 71 s.
+ [ 04:25:53 |  40% ] transition 336 / 840, remaining: 61 s.
+ [ 04:26:03 |  50% ] transition 420 / 840, remaining: 51 s.
+ [ 04:26:13 |  60% ] transition 504 / 840, remaining: 41 s.
+ [ 04:26:24 |  70% ] transition 588 / 840, remaining: 30 s.
+ [ 04:26:34 |  80% ] transition 672 / 840, remaining: 20 s.
+ [ 04:26:44 |  90% ] transition 756 / 840, remaining: 10 s.
+ [ 04:26:53 | 100% ] transition 840 / 840, remaining: 0 s.
+ Finished calculation of matrix elements at 04:26:53.
+ Elapsed time: 100 s.
+ 
+ Preparing simple convergence tests with 254 unoccupied bands.
+ 
+ Started building polarizability matrix with 180 processor(s) at 04:26:58.
+ [ 04:26:58 |   0% ] processor   1 / 180.
+ [ 04:26:59 |   1% ] processor   3 / 180, remaining: 54 s.
+ [ 04:27:02 |   9% ] processor  18 / 180, remaining: 35 s.
+ [ 04:27:06 |  19% ] processor  36 / 180, remaining: 31 s.
+ [ 04:27:09 |  29% ] processor  54 / 180, remaining: 27 s.
+ [ 04:27:13 |  39% ] processor  72 / 180, remaining: 23 s.
+ [ 04:27:17 |  49% ] processor  90 / 180, remaining: 19 s.
+ [ 04:27:21 |  59% ] processor 108 / 180, remaining: 15 s.
+ [ 04:27:24 |  69% ] processor 126 / 180, remaining: 12 s.
+ [ 04:27:28 |  79% ] processor 144 / 180, remaining: 8 s.
+ [ 04:27:32 |  89% ] processor 162 / 180, remaining: 4 s.
+ [ 04:27:36 |  99% ] processor 180 / 180, remaining: 0 s.
+ Finished building polarizability matrix at 04:27:36.
+ Elapsed time: 38 s.
+ 
+ q-pt     13: Head of Epsilon         =    3.577717651371998E+000  -3.083674628967714E-018
+ q-pt     13: Epsilon(2,2)            =    3.144643200602987E+000  -9.635615164513663E-019
+ q-pt     13: Head of Epsilon Inverse =    6.739495369905836E-001   4.228388472693467E-018
+ q-pt     13: Epsilon Inverse(2,2)    =    7.236608339364343E-001   5.827586677109586E-019
+
+ Writing dielectric matrix to file
+ Ok
+
+================================================================================
+ 04:27:38   Dealing with q =  0.000000  0.933333  0.000000               14 / 14
+================================================================================
+
+ This is a regular non-zero q-point.
+ Rank of the polarizability matrix (nmtx): 2743
+ 
+ BLACS processor grid:  12 x  15; BLOCKSIZE =   32
+ 
+ Number of k-points in the irreducible BZ(q) (nrk): 120
+ 
+ Started calculation of matrix elements with 840 transition(s) at 04:27:38.
+ [ 04:27:38 |   0% ] transition   1 / 840.
+ [ 04:27:38 |   0% ] transition   3 / 840, remaining: 91 s.
+ [ 04:27:48 |  10% ] transition  84 / 840, remaining: 90 s.
+ [ 04:27:58 |  20% ] transition 168 / 840, remaining: 81 s.
+ [ 04:28:08 |  30% ] transition 252 / 840, remaining: 71 s.
+ [ 04:28:19 |  40% ] transition 336 / 840, remaining: 61 s.
+ [ 04:28:29 |  50% ] transition 420 / 840, remaining: 51 s.
+ [ 04:28:39 |  60% ] transition 504 / 840, remaining: 41 s.
+ [ 04:28:49 |  70% ] transition 588 / 840, remaining: 30 s.
+ [ 04:28:59 |  80% ] transition 672 / 840, remaining: 20 s.
+ [ 04:29:09 |  90% ] transition 756 / 840, remaining: 10 s.
+ [ 04:29:18 | 100% ] transition 840 / 840, remaining: 0 s.
+ Finished calculation of matrix elements at 04:29:19.
+ Elapsed time: 100 s.
+ 
+ Preparing simple convergence tests with 254 unoccupied bands.
+ 
+ Started building polarizability matrix with 180 processor(s) at 04:29:24.
+ [ 04:29:24 |   0% ] processor   1 / 180.
+ [ 04:29:24 |   1% ] processor   3 / 180, remaining: 38 s.
+ [ 04:29:28 |   9% ] processor  18 / 180, remaining: 39 s.
+ [ 04:29:32 |  19% ] processor  36 / 180, remaining: 33 s.
+ [ 04:29:36 |  29% ] processor  54 / 180, remaining: 29 s.
+ [ 04:29:40 |  39% ] processor  72 / 180, remaining: 25 s.
+ [ 04:29:44 |  49% ] processor  90 / 180, remaining: 21 s.
+ [ 04:29:48 |  59% ] processor 108 / 180, remaining: 16 s.
+ [ 04:29:52 |  69% ] processor 126 / 180, remaining: 12 s.
+ [ 04:29:55 |  79% ] processor 144 / 180, remaining: 8 s.
+ [ 04:29:59 |  89% ] processor 162 / 180, remaining: 4 s.
+ [ 04:30:03 |  99% ] processor 180 / 180, remaining: 0 s.
+ Finished building polarizability matrix at 04:30:03.
+ Elapsed time: 40 s.
+ 
+ q-pt     14: Head of Epsilon         =    3.639410025490395E+000   1.582291976408867E-018
+ q-pt     14: Epsilon(2,2)            =    3.108288522639130E+000   1.917469882545640E-018
+ q-pt     14: Head of Epsilon Inverse =    5.584677851940014E-001   8.944667923005412E-019
+ q-pt     14: Epsilon Inverse(2,2)    =    6.942779712843279E-001  -1.910906329005702E-018
+
+ Writing dielectric matrix to file
+ Ok
+
+
+********************************************************************************
+*                                                                              *
+* Your calculation employed methods and algorithms published in peer-reviewed  *
+* papers. Please, cite the following references to give proper credit to their *
+*          authors and help support future development of BerkeleyGW.          *
+*                                                                              *
+********************************************************************************
+
+ J. Deslippe, G. Samsonidze, D. A. Strubbe, M. Jain, M. L. Cohen, and S. G.
+ Louie, BerkeleyGW: A Massively Parallel Computer Package for the Calculation
+ of the Quasiparticle and Optical Properties of Materials and Nanostructures,
+ Computer Physics Communications 183, 1269 (2012).
+
+ M. S. Hybertsen and S. G. Louie, Electron Correlation in Semiconductors and
+ Insulators: Band Gaps and Quasiparticle Energies, Phys. Rev. B 34, 5390
+ (1986).
+
+ S. Ismail-Beigi, Truncation of Periodic Image Interactions for Confined
+ Systems, Phys. Rev. B 73, 233103 (2006).
+
+ M. Del Ben, F. H. da Jornada, A. Canning, N. Wichmann, K. Raman, R. Sasanka,
+ C. Yang, S. G. Louie, and J. Deslippe, Large-Scale GW Calculations on Pre-
+ Exascale HPC Systems, Computer Physics Communications 235, 187 (2019).
+
+ B. A. Barker, and S. G. Louie, Electronic and Optical Properties of Solids
+ with Strong Spin-Orbit Coupling, U. C. Berkeley PhD dissertation (2018).
+
+********************************************************************************
+
+ 
+ Timing information
+ 
+                                CPU time (s)          WALL time (s)       Number
+ Routine                       min        max        min        max     of calls
+ -------------------------  ---------  ---------  ---------  ---------  --------
+ - Eps (I/O) Comm                0.33       6.34       3.00       9.16        14
+ - Eps (I/O) IO                  2.55      10.65      10.63      11.41        14
+ - Input I/O                     0.48       5.07       0.36       6.43     13847
+ - Input Comm                   37.71      49.59      39.38      49.71     13847
+ - FFT Zero                      4.21      43.96       4.21      44.12    164640
+ - FFT Put                      12.97     154.26      12.99     154.65    164640
+ - FFT Plan                      0.61      10.19       0.81      10.42    305760
+ - FFT Exec                     49.76    1009.51      49.83    1009.78    305760
+ - FFT Mltply                    0.00      80.87       0.00      81.05    141120
+ - FFT Conjg                     2.27       4.68       2.25       4.61     23520
+ - FFT Get                       0.00       8.76       0.00       8.79    141120
+ - I/O TOTAL                    49.11      68.29      71.23      71.72        18
+ - INPUT                        44.16      51.53      51.43      51.64         1
+ - INPUT_Q                       0.00       0.00       0.00       0.00         1
+ - FULLBZ                        0.00       0.00       0.00       0.09         1
+ - GVEC                          0.23       0.30       0.35       0.71        14
+ - SUBGRP                        0.00       0.00       0.00       0.01        14
+ - IRRBZ                         0.00       0.01       0.01       0.04        14
+ - GENWF                        84.30     107.18      84.31     107.18     11760
+ - MTXEL                        70.61    1302.03      70.91    1302.23     11760
+ - RQSTAR                        0.01       0.01       0.00       0.01      1680
+ - GMAP                          2.01       2.31       2.00       2.31      1680
+ - EPSINV (TOTAL)                9.01     274.82      27.28     279.06        14
+ - CHI SUM (COMM)               18.56     510.35      18.54     510.39      2520
+ - CHI SUM (TOTAL)             260.97     512.74     261.00     512.80        14
+ - GENWF (VAL)                  47.00      59.61      47.04      59.61     11760
+ - GENWF (COND)                 35.72      47.32      35.72      47.33      1680
+ - EPSINV (VCOUL)                0.04     251.83       0.04     251.84        14
+ - JOB SETUP                     0.00       0.00       0.00       0.01         1
+ - Q LOOP SETUP                  0.23       0.31       0.36       0.72        14
+ - INIT CUTOFF                   0.00       0.00       0.00       0.00        14
+ - INIT SCALAPACK                0.33       2.93       0.38       2.95        14
+ - INIT ARRAYS                   0.01       4.83       0.01       4.85        14
+ - CONVERGE TESTS                0.03    1249.55       0.03    1249.61        14
+ - MTXEL (DENOM)                 0.00       0.33       0.00       0.36    141120
+ - MTXEL (FFT)                  70.56    1301.94      70.86    1302.16     11760
+ - GENWF (Ekin)                  2.50       2.82       2.52       2.85      3360
+ - GENWF (Sort)                 61.95      72.81      61.98      72.83      3360
+ - CHI SUM (zGEMM)               0.05     377.56       0.05     377.60      2520
+ - CHI SUM (PREP)                0.90     164.98       0.90     164.96      2520
+ - CHI SUM (ARRAY ALLOC)         1.20       1.42       1.20       1.45      2520
+ - EPSINV (I/O)                  3.15      17.97      20.92      20.96        14
+ - EPSINV (INVERT)               5.43       6.13       5.89       6.18        14
+ - CHI SUM (BAR)                 0.00       0.21       0.01       0.21        14
+ - FFT MLTPLY                    0.00       1.60       0.00       1.68    141120
+ - TOTAL                      1979.40    2002.61    2005.94    2006.15         1
+ 
+ Job Done
+ 
+
+==== Memory Usage ====
+Maximum memory currently allocated (MB):         1.5015 on processor      0
+Maximum memory high-water-mark     (MB):      1084.1898 on processor      0
+Minimum memory high-water-mark     (MB):       474.9113 on processor    178

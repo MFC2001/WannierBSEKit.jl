@@ -1,0 +1,50 @@
+&CONTROL
+  title         = 'LiF',
+!  restart_mode  = 'restart', !default:'from_scratch'
+  calculation   = 'scf',      !options:'scf','nscf','bands','relax','vc-relax',etc.
+  tprnfor       = .true., 
+  tstress       = .true.,
+  forc_conv_thr = 1.0d-3,
+  disk_io       = 'low'
+  verbosity     = 'high',
+  pseudo_dir    = 'path/to/dojo-pseudopotential/nc-sr-04_pw_standard_upf/',
+  outdir        = './', 
+/
+
+&SYSTEM
+  ibrav = 2,  !FCC
+  A     = 4.026
+  nat   = 2,  !number of atoms in the unit cell
+  ntyp  = 2,   !number of types of atoms in the unit cell
+  nbnd  = 28, !Set it manually.
+  occupations = 'fixed', !also can use 'fixed' for insulators.
+  ecutwfc   = 80,  !Ry
+!  input_dft = 'hse'
+!  exxdiv_treatment = 'vcut_spherical' !treat the Coulomb potential divergencies at small q vectors.
+!  x_gamma_extrapolation = .false. !incompatible with vcut.
+!  ecutfock = 300 !default:ecutrho, must be .gt. ecutwfc.
+!  nr1=243, nr2=243, nr3=162
+/
+
+&ELECTRONS
+  electron_maxstep = 200 !default:100
+  conv_thr = 1.d-8,
+!  mixing_beta = 0.6
+  diago_full_acc = .true., !For calculating unoccupied states at the same level of accuracy.
+  diago_david_ndim = 4
+!  startingpot = 'file',
+!  startingwfc = 'file',
+/
+
+
+ATOMIC_SPECIES
+  Li 6.941  Li.upf
+  F 18.998  F.upf
+
+ATOMIC_POSITIONS (crystal)
+Li            0.0000000000        0.0000000000        0.0000000000
+F             0.5000000000        0.5000000000        0.5000000000
+
+K_POINTS (automatic)
+8 8 8 1 1 1
+

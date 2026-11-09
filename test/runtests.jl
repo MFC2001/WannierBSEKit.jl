@@ -2,5 +2,5 @@ using WannierBSEKit
 using Test
 
 @testset "WannierBSEKit.jl" begin
-    # Write your tests here.
+    include(joinpath(@__DIR__, "ast_template_check.jl"))
 end

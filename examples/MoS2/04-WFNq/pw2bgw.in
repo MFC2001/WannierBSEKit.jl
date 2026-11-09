@@ -1,0 +1,28 @@
+&INPUT_PW2BGW
+  prefix = 'pwscf'
+  outdir = './'
+
+  ! Set 1 for real flavor of BerkeleyGW (for systems with inversion symmetry
+  ! and time-reversal symmetry) or 2 for complex flavor of BerkeleyGW (for
+  ! systems without inversion symmetry and time-reversal symmetry)
+  real_or_complex = 2
+
+  wfng_flag = .true.
+  wfng_file = 'WFN'
+  wfng_kgrid = .true.
+
+  !kgrid
+  wfng_nk1 = 15
+  wfng_nk2 = 15
+  wfng_nk3 = 1
+  wfng_dk1 = 0.015
+  wfng_dk2 = 0.0
+  wfng_dk3 = 0.0
+
+  ! wfng_occupation = .true.
+  ! wfng_nvmin = 1
+  ! wfng_nvmax = 5
+
+/
+
+

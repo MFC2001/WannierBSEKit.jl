@@ -1,0 +1,74 @@
+&CONTROL
+  title         = 'Graphone',
+!  restart_mode  = 'restart', !default:'from_scratch'
+  calculation   = 'nscf',      !options:'scf','nscf','bands','relax','vc-relax',etc.
+  tprnfor       = .true., 
+  tstress       = .true.,
+  forc_conv_thr = 1.0d-3,
+  disk_io       = 'low'
+  verbosity     = 'high',
+  pseudo_dir    = 'path/to/dojo-pseudopotential/nc-sr-05_pbe_standard_upf/', 
+  outdir        = './', 
+/
+
+&SYSTEM
+  ibrav = 4,   
+  A = 2.5346,
+  C = 25,
+  nat   = 3,  !number of atoms in the unit cell
+  ntyp  = 3,   !number of types of atoms in the unit cell
+  nbnd  = 100, !Set it manually.
+  occupations = 'smearing', !also can use 'fixed' for insulators.
+  degauss = 1e-9
+  ecutwfc   = 100,  !Ry
+!  ecutrho   = 720,  !default:4*ecutwfc, and use a bigger one for USPP.
+!  input_dft = 'hse'
+  assume_isolated = '2D'
+!  exxdiv_treatment = 'vcut_spherical' !treat the Coulomb potential divergencies at small q vectors.
+!  x_gamma_extrapolation = .false. !incompatible with vcut.
+!  ecutfock = 300 !default:ecutrho, must be .gt. ecutwfc.
+!  nr1=243, nr2=243, nr3=162
+  noinv = .true.
+  nspin = 2
+  starting_magnetization(2) = 0.5
+/
+
+&ELECTRONS
+  electron_maxstep = 200 !default:100
+  conv_thr = 1.d-8,
+  adaptive_thr = .true. !useful when using EXX.
+!  exx_maxstep = 200 !default:100
+!  mixing_mode = 'local-TF' !default:plain
+!  mixing_beta = 0.6
+  diago_full_acc = .true., !For calculating unoccupied states at the same level of accuracy.
+!  diagonalization = 'cg'
+!  diago_cg_maxiter = 150
+  diago_david_ndim = 4
+!  startingpot = 'file',
+!  startingwfc = 'file',
+/
+
+&IONS
+  ion_dynamics = 'bfgs'
+/
+
+&CELL
+  cell_dofree    = '2Dxy',
+  press_conv_thr = 0.1
+/
+
+
+ATOMIC_SPECIES
+  C1  12.011  C.upf
+  C2  12.011  C.upf
+  H    1.008  H.upf
+
+ATOMIC_POSITIONS (crystal)
+C1           0.3333333333        0.6666666667        0.5000000000
+C2           0.6666666667        0.3333333333        0.4871518209
+H            0.3333333333        0.6666666667        0.5461905691
+
+K_POINTS (automatic)
+15 15 1 0 0 0
+
+

@@ -1,0 +1,40 @@
+#                                                                     
+#   __   __     _        __  __       ____      U  ___  u             
+#   \ \ / / U  /"\  U u |" \/ "| u U | __") u    \/"_ \/              
+#    \ V /   \/ _ \/   \| |\/| |/   \|  _ \/     | | | |              
+#   U_|"|_u  / ___ \    | |  | |     | |_) | .-,_| |_| |              
+#     |_|   /_/   \_\   |_|  |_|     |____/   \_)-\___/               
+# .-,//|(_   \\    >>  <<,-,,-.     _|| \\_        \\                 
+#  \_) (__) (__)  (__)  (./  \.)   (__) (__)      (__)                
+#                                                                     
+#                                                                     
+# Version 5.3.0 Revision 23927 Hash (prev commit) 1730222ea           
+#                        Branch is                                    
+#         MPI+OpenMP+SLK+SLEPC+HDF5_MPI_IO Build                      
+#                http://www.yambo-code.eu                             
+#
+screen                           # [R] Inverse Dielectric/Response Matrix
+em1s                             # [R][Xs] Statically Screened Interaction
+rim_cut                          # [R] Coulomb potential
+dipoles                          # [R] Oscillator strenghts (or dipoles)
+ElecTemp= 0.000000         eV    # Electronic Temperature
+#DegFix                        # Force the code to impose the energy levels to respect their degeneracy
+DIP_Threads=0                    # [OPENMP/X] Number of threads for dipoles
+X_Threads=0                      # [OPENMP/X] Number of threads for response functions
+RandQpts= 3000000                # [RIM] Number of random q-points in the BZ
+RandGvec= 103              RL    # [RIM] Coulomb interaction RS components
+CUTGeo= "box z"                  # [CUT] Coulomb Cutoff geometry: box/cylinder/sphere/ws/slab X/Y/Z/XY..
+% CUTBox
+  0.00000 |  0.00000 | 47.00000 |        # [CUT] [au] Box sides
+%
+CUTRadius= 0.000000              # [CUT] [au] Sphere/Cylinder radius
+CUTCylLen= 0.000000              # [CUT] [au] Cylinder length
+CUTwsGvec= 0.700000              # [CUT] WS cutoff: number of G to be modified
+Chimod= "HARTREE"                # [X] IP/Hartree/ALDA/LRC/PF/BSfxc
+% BndsRnXs
+   1 | 100 |                         # [Xs] Polarization function bands
+%
+NGsBlkXs= 20               Ry    # [Xs] Response block size
+% LongDrXs
+ 1.000000 | 0.000000 | 0.000000 |        # [Xs] [cc] Electric Field
+%

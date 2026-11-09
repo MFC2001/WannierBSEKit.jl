@@ -1,0 +1,62 @@
+# Command checklist for the LiF workflow.
+# Run each program block inside the directory named by its comment (# 01-scf,
+# # 02-kgrid, ...); run the cp/ln/mv preparation lines from this examples/LiF
+# directory.  Modify pseudo_dir, the $...bin variables and the paths for your
+# own installation.
+
+# 01-scf
+mpirun -np 24 $QEbin/pw.x < pw.in > pw.out
+##
+cp ./01-scf/pwscf.save ./03-WFN/pwscf.save -r
+cp ./01-scf/pwscf.save ./04-WFNq/pwscf.save -r
+cp ./01-scf/pwscf.save ./06-nscf/pwscf.save -r
+
+# 02-kgrid
+$bgwbin/kgrid.x WFN.in WFN.out WFN.log
+$bgwbin/kgrid.x WFNq.in WFNq.out WFNq.log
+
+# 03-WFN
+mpirun -np 24 $QEbin/pw.x < pw.in > pw.out
+$QEbin/pw2bgw.x < pw2bgw.in > pw2bgw.out
+
+# 04-WFNq
+mpirun -np 24 $QEbin/pw.x < pw.in > pw.out
+$QEbin/pw2bgw.x < pw2bgw.in > pw2bgw.out
+##
+ln -sf ./03-WFN/WFN ./05-epsilon/WFN
+ln -sf ./04-WFNq/WFN ./05-epsilon/WFNq
+
+# 05-epsilon
+mpirun -np 24 $bgwbin/epsilon.cplx.x > epsilon.out
+
+# 06-nscf
+mpirun -np 24 $QEbin/pw.x < pw.in > pw.out
+##
+ln -sf ./06-nscf/pwscf.save 07-wannierberri/pw2wannier90/pwscf.save
+ln -sf ./06-nscf/pwscf.save 07-wannierberri/pwscf.save
+
+# 07-wannierberri/pw2wannier90
+$QEbin/wannier90.x -pp wannier90
+mpirun -np 24 $QEbin/pw2wannier90.x <pw2wannier90.in >pw2wannier90.out
+$juliabin/julia wanniereigenvalue.jl > runlog
+##
+mv ./07-wannierberri/pw2wannier90/wannier90.eig 07-wannierberri/wannier90.eig
+mv ./07-wannierberri/pw2wannier90/wannier90.mmn 07-wannierberri/wannier90.mmn
+
+# 07-wannierberri
+conda activate wannierberri_env
+python pre.py > pre.out
+python wannier.py > wannierberri.out
+$juliabin/julia wannierberri.jl > runlog
+
+# 08-interaction
+$juliabin/julia -t 24 wannierinteraction.jl > runlog
+
+# 09-bse
+$juliabin/julia -t 24 bseband.jl > runlog
+
+# 10-absorption
+$juliabin/julia -t 24 absorption.jl > runlog
+
+# 11-excwannier
+$juliabin/julia -t 24 excwannier.jl > runlog

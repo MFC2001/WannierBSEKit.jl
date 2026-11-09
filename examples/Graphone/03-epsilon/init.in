@@ -1,0 +1,18 @@
+#  __      __   ______   __       __  _______    ______               
+# |  \    /  \ /      \ |  \     /  \|       \  /      \              
+#  \$$\  /  $$|  $$$$$$\| $$\   /  $$| $$$$$$$\|  $$$$$$\             
+#   \$$\/  $$ | $$__| $$| $$$\ /  $$$| $$__/ $$| $$  | $$             
+#    \$$  $$  | $$    $$| $$$$\  $$$$| $$    $$| $$  | $$             
+#     \$$$$   | $$$$$$$$| $$\$$ $$ $$| $$$$$$$\| $$  | $$             
+#     | $$    | $$  | $$| $$ \$$$| $$| $$__/ $$| $$__/ $$             
+#     | $$    | $$  | $$| $$  \$ | $$| $$    $$ \$$    $$             
+#      \$$     \$$   \$$ \$$      \$$ \$$$$$$$   \$$$$$$              
+#                                                                     
+# Version 5.3.0 Revision 23927 Hash (prev commit) 1730222ea           
+#                        Branch is                                    
+#         MPI+OpenMP+SLK+SLEPC+HDF5_MPI_IO Build                      
+#                http://www.yambo-code.eu                             
+#
+setup                            # [R] Initialization
+ElecTemp= 0.000000         eV    # Electronic Temperature
+#DegFix                        # Force the code to impose the energy levels to respect their degeneracy

@@ -1,0 +1,158 @@
+Output file:
+> epsmat.h5
+
+Input files:
+< epsilon1/epsmat.h5
+< epsilon2/epsmat.h5
+< epsilon3/epsmat.h5
+< epsilon4/epsmat.h5
+< epsilon5/epsmat.h5
+< epsilon6/epsmat.h5
+
+Analyzing files and checking consistency against epsilon1/epsmat.h5
+
+  Checking epsilon2/epsmat.h5
+  Checking epsilon3/epsmat.h5
+  Checking epsilon4/epsmat.h5
+  Checking epsilon5/epsmat.h5
+  Checking epsilon6/epsmat.h5
+  All files are consistent!
+
+Summary:
+
+  Flavor: Complex
+  Frequency dependency: 0
+  Number of frequencies: 1
+  Number of G-vectors: 10777
+  Epsilon cutoff: 20.000000
+  Maximum rank of the merged epsilon matrix (nmtx): 174
+  Total number of q-points after merging: 119
+
+Writing output parameters
+
+  Ok!
+
+Writing output matrices
+
+  Dealing with q=1/119 (rank=169)
+  Dealing with q=2/119 (rank=168)
+  Dealing with q=3/119 (rank=168)
+  Dealing with q=4/119 (rank=162)
+  Dealing with q=5/119 (rank=153)
+  Dealing with q=6/119 (rank=162)
+  Dealing with q=7/119 (rank=168)
+  Dealing with q=8/119 (rank=169)
+  Dealing with q=9/119 (rank=169)
+  Dealing with q=10/119 (rank=167)
+  Dealing with q=11/119 (rank=163)
+  Dealing with q=12/119 (rank=160)
+  Dealing with q=13/119 (rank=165)
+  Dealing with q=14/119 (rank=167)
+  Dealing with q=15/119 (rank=164)
+  Dealing with q=16/119 (rank=165)
+  Dealing with q=17/119 (rank=161)
+  Dealing with q=18/119 (rank=161)
+  Dealing with q=19/119 (rank=163)
+  Dealing with q=20/119 (rank=165)
+  Dealing with q=21/119 (rank=169)
+  Dealing with q=22/119 (rank=165)
+  Dealing with q=23/119 (rank=166)
+  Dealing with q=24/119 (rank=162)
+  Dealing with q=25/119 (rank=162)
+  Dealing with q=26/119 (rank=164)
+  Dealing with q=27/119 (rank=167)
+  Dealing with q=28/119 (rank=166)
+  Dealing with q=29/119 (rank=166)
+  Dealing with q=30/119 (rank=165)
+  Dealing with q=31/119 (rank=163)
+  Dealing with q=32/119 (rank=162)
+  Dealing with q=33/119 (rank=164)
+  Dealing with q=34/119 (rank=165)
+  Dealing with q=35/119 (rank=166)
+  Dealing with q=36/119 (rank=163)
+  Dealing with q=37/119 (rank=169)
+  Dealing with q=38/119 (rank=163)
+  Dealing with q=39/119 (rank=168)
+  Dealing with q=40/119 (rank=166)
+  Dealing with q=41/119 (rank=166)
+  Dealing with q=42/119 (rank=165)
+  Dealing with q=43/119 (rank=168)
+  Dealing with q=44/119 (rank=165)
+  Dealing with q=45/119 (rank=167)
+  Dealing with q=46/119 (rank=163)
+  Dealing with q=47/119 (rank=167)
+  Dealing with q=48/119 (rank=171)
+  Dealing with q=49/119 (rank=174)
+  Dealing with q=50/119 (rank=169)
+  Dealing with q=51/119 (rank=168)
+  Dealing with q=52/119 (rank=170)
+  Dealing with q=53/119 (rank=166)
+  Dealing with q=54/119 (rank=168)
+  Dealing with q=55/119 (rank=172)
+  Dealing with q=56/119 (rank=170)
+  Dealing with q=57/119 (rank=172)
+  Dealing with q=58/119 (rank=170)
+  Dealing with q=59/119 (rank=168)
+  Dealing with q=60/119 (rank=174)
+  Dealing with q=61/119 (rank=170)
+  Dealing with q=62/119 (rank=162)
+  Dealing with q=63/119 (rank=174)
+  Dealing with q=64/119 (rank=164)
+  Dealing with q=65/119 (rank=163)
+  Dealing with q=66/119 (rank=162)
+  Dealing with q=67/119 (rank=162)
+  Dealing with q=68/119 (rank=165)
+  Dealing with q=69/119 (rank=165)
+  Dealing with q=70/119 (rank=166)
+  Dealing with q=71/119 (rank=165)
+  Dealing with q=72/119 (rank=166)
+  Dealing with q=73/119 (rank=167)
+  Dealing with q=74/119 (rank=166)
+  Dealing with q=75/119 (rank=167)
+  Dealing with q=76/119 (rank=164)
+  Dealing with q=77/119 (rank=165)
+  Dealing with q=78/119 (rank=164)
+  Dealing with q=79/119 (rank=164)
+  Dealing with q=80/119 (rank=165)
+  Dealing with q=81/119 (rank=164)
+  Dealing with q=82/119 (rank=166)
+  Dealing with q=83/119 (rank=167)
+  Dealing with q=84/119 (rank=169)
+  Dealing with q=85/119 (rank=167)
+  Dealing with q=86/119 (rank=166)
+  Dealing with q=87/119 (rank=168)
+  Dealing with q=88/119 (rank=168)
+  Dealing with q=89/119 (rank=168)
+  Dealing with q=90/119 (rank=168)
+  Dealing with q=91/119 (rank=170)
+  Dealing with q=92/119 (rank=170)
+  Dealing with q=93/119 (rank=169)
+  Dealing with q=94/119 (rank=168)
+  Dealing with q=95/119 (rank=168)
+  Dealing with q=96/119 (rank=170)
+  Dealing with q=97/119 (rank=171)
+  Dealing with q=98/119 (rank=169)
+  Dealing with q=99/119 (rank=172)
+  Dealing with q=100/119 (rank=164)
+  Dealing with q=101/119 (rank=167)
+  Dealing with q=102/119 (rank=166)
+  Dealing with q=103/119 (rank=168)
+  Dealing with q=104/119 (rank=168)
+  Dealing with q=105/119 (rank=164)
+  Dealing with q=106/119 (rank=165)
+  Dealing with q=107/119 (rank=168)
+  Dealing with q=108/119 (rank=167)
+  Dealing with q=109/119 (rank=165)
+  Dealing with q=110/119 (rank=170)
+  Dealing with q=111/119 (rank=166)
+  Dealing with q=112/119 (rank=169)
+  Dealing with q=113/119 (rank=169)
+  Dealing with q=114/119 (rank=168)
+  Dealing with q=115/119 (rank=167)
+  Dealing with q=116/119 (rank=163)
+  Dealing with q=117/119 (rank=166)
+  Dealing with q=118/119 (rank=166)
+  Dealing with q=119/119 (rank=169)
+
+All done!
+

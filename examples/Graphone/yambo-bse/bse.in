@@ -1,0 +1,60 @@
+#                                                                     
+#  **    **    **     ****     ****  ******     *******               
+# //**  **    ****   /**/**   **/** /*////**   **/////**              
+#  //****    **//**  /**//** ** /** /*   /**  **     //**             
+#   //**    **  //** /** //***  /** /******  /**      /**             
+#    /**   **********/**  //*   /** /*//// **/**      /**             
+#    /**  /**//////**/**   /    /** /*    /**//**     **              
+#    /**  /**     /**/**        /** /*******  //*******               
+#    //   //      // //         //  ///////    ///////                
+#                                                                     
+# Version 5.3.0 Revision 23927 Hash (prev commit) 1730222ea           
+#                        Branch is                                    
+#         MPI+OpenMP+SLK+SLEPC+HDF5_MPI_IO Build                      
+#                http://www.yambo-code.eu                             
+#
+optics                           # [R] Linear Response optical properties
+bss                              # [R] BSE solver
+rim_cut                          # [R] Coulomb potential
+bse                              # [R][BSE] Bethe Salpeter Equation.
+dipoles                          # [R] Oscillator strenghts (or dipoles)
+#DegFix                        # Force the code to impose the energy levels to respect their degeneracy
+FFTGvecs= 20221            RL    # [FFT] Plane-waves
+DIP_Threads=0                    # [OPENMP/X] Number of threads for dipoles
+X_Threads=0                      # [OPENMP/X] Number of threads for response functions
+K_Threads=0                      # [OPENMP/BSK] Number of threads for response functions
+RandQpts= 3000000                # [RIM] Number of random q-points in the BZ
+RandGvec= 103              RL    # [RIM] Coulomb interaction RS components
+CUTGeo= "box z"                  # [CUT] Coulomb Cutoff geometry: box/cylinder/sphere/ws/slab X/Y/Z/XY..
+% CUTBox
+  0.00000 |  0.00000 | 47.00000 |        # [CUT] [au] Box sides
+%
+CUTRadius= 0.000000              # [CUT] [au] Sphere/Cylinder radius
+CUTCylLen= 0.000000              # [CUT] [au] Cylinder length
+CUTwsGvec= 0.700000              # [CUT] WS cutoff: number of G to be modified
+BSKmod= "SEX"                    # [BSE] IP/Hartree/HF/ALDA/SEX/BSfxc
+BSEmod= "resonant"               # [BSE] resonant/retarded/coupling
+BSSmod= "h"                      # [BSS] (h)aydock/(d)iagonalization/(s)lepc/(i)nversion/(t)ddft`
+DipoleEtresh= 0.100000E-4  eV    # [DIP] Treshold in the definition of R=P/deltaE
+BSENGexx= 1                RL    # [BSK] Exchange components
+BSENGBlk= 1441             RL    # [BSK] Screened interaction block size [if -1 uses all the G-vectors of W(q,G,Gp)]
+#WehCpl                        # [BSK] eh interaction included also in coupling
+% BSEQptR
+ 1 | 1 |                             # [BSK] Transferred momenta range
+%
+% BSEBands
+  5 |  5 |                           # [BSK] Bands range
+%
+% BEnRange
+  -10.00000 | 0.00000 |         eV    # [BSS] Energy range
+%
+% BDmRange
+ 0.100000 | 0.100000 |         eV    # [BSS] Damping range
+%
+BEnSteps= 10000                    # [BSS] Energy steps
+% BLongDir
+ 1.000000 | 0.000000 | 0.000000 |        # [BSS] [cc] Electric Field versor
+%
+BSEprop= "magn"                  # [BSS] Can be any among abs/jdos/kerr/asymm/anHAll/magn/dich/photolum/esrt
+BSEdips= "none"                  # [BSS] Can be "trace/none" or "xy/xz/yz" to define off-diagonal rotation plane
+BSHayTrs=-0.020000               # [BSS] Relative [o/o] Haydock threshold. Strict(>0)/Average(<0)

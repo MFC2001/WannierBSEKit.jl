@@ -1,0 +1,76 @@
+Output file:
+> epsmat.h5
+
+Input files:
+< epsilon1/epsmat.h5
+< epsilon2/epsmat.h5
+
+Analyzing files and checking consistency against epsilon1/epsmat.h5
+
+  Checking epsilon2/epsmat.h5
+  All files are consistent!
+
+Summary:
+
+  Flavor: Complex
+  Frequency dependency: 0
+  Number of frequencies: 1
+  Number of G-vectors: 240367
+  Epsilon cutoff: 20.000000
+  Maximum rank of the merged epsilon matrix (nmtx): 2743
+  Total number of q-points after merging: 45
+
+Writing output parameters
+
+  Ok!
+
+Writing output matrices
+
+  Dealing with q=1/45 (rank=2743)
+  Dealing with q=2/45 (rank=2705)
+  Dealing with q=3/45 (rank=2699)
+  Dealing with q=4/45 (rank=2679)
+  Dealing with q=5/45 (rank=2668)
+  Dealing with q=6/45 (rank=2682)
+  Dealing with q=7/45 (rank=2682)
+  Dealing with q=8/45 (rank=2682)
+  Dealing with q=9/45 (rank=2682)
+  Dealing with q=10/45 (rank=2668)
+  Dealing with q=11/45 (rank=2679)
+  Dealing with q=12/45 (rank=2699)
+  Dealing with q=13/45 (rank=2705)
+  Dealing with q=14/45 (rank=2743)
+  Dealing with q=15/45 (rank=2707)
+  Dealing with q=16/45 (rank=2696)
+  Dealing with q=17/45 (rank=2680)
+  Dealing with q=18/45 (rank=2678)
+  Dealing with q=19/45 (rank=2689)
+  Dealing with q=20/45 (rank=2687)
+  Dealing with q=21/45 (rank=2678)
+  Dealing with q=22/45 (rank=2687)
+  Dealing with q=23/45 (rank=2689)
+  Dealing with q=24/45 (rank=2678)
+  Dealing with q=25/45 (rank=2680)
+  Dealing with q=26/45 (rank=2696)
+  Dealing with q=27/45 (rank=2695)
+  Dealing with q=28/45 (rank=2677)
+  Dealing with q=29/45 (rank=2680)
+  Dealing with q=30/45 (rank=2681)
+  Dealing with q=31/45 (rank=2696)
+  Dealing with q=32/45 (rank=2696)
+  Dealing with q=33/45 (rank=2681)
+  Dealing with q=34/45 (rank=2680)
+  Dealing with q=35/45 (rank=2677)
+  Dealing with q=36/45 (rank=2678)
+  Dealing with q=37/45 (rank=2689)
+  Dealing with q=38/45 (rank=2696)
+  Dealing with q=39/45 (rank=2696)
+  Dealing with q=40/45 (rank=2696)
+  Dealing with q=41/45 (rank=2689)
+  Dealing with q=42/45 (rank=2676)
+  Dealing with q=43/45 (rank=2678)
+  Dealing with q=44/45 (rank=2678)
+  Dealing with q=45/45 (rank=2682)
+
+All done!
+

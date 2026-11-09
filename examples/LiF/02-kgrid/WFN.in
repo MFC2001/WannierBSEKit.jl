@@ -1,0 +1,15 @@
+15 15 15                  ! numbers of k-points along b1,b2,b3
+0 0 0                  ! k-grid offset (0.0 unshifted, 0.5 shifted by half a grid step)
+0.0 0.0 0.0            ! a small q-shift (0.0 unshifted, 0.001 shifted by one 1000th of b3)
+
+-0.500000   0.000000   0.500000            ! lattice vectors in Cartesian coordinates (x,y,z)
+ 0.000000   0.500000   0.500000            ! in units of the lattice parameter
+-0.500000   0.500000   0.000000            !
+2                      ! number of atoms in the unit cell
+1  0.0000000  0.0000000  0.0000000    ! atomic species and positions in Cartesian coordinates (x,y,z)
+2  0.5000000  0.5000000  0.5000000    ! in units of the lattice parameter
+32 32 32                  ! size of FFT grid
+.false.                ! use time-reversal symmetry. Set to false for BerkeleyGW
+.false.                ! OPTIONAL: k-points in the log file are in Cartesian coordinates
+.false.                ! OPTIONAL: output is in Octopus format
+

@@ -1,0 +1,55 @@
+#                                                                     
+#  **    **    **     ****     ****  ******     *******               
+# //**  **    ****   /**/**   **/** /*////**   **/////**              
+#  //****    **//**  /**//** ** /** /*   /**  **     //**             
+#   //**    **  //** /** //***  /** /******  /**      /**             
+#    /**   **********/**  //*   /** /*//// **/**      /**             
+#    /**  /**//////**/**   /    /** /*    /**//**     **              
+#    /**  /**     /**/**        /** /*******  //*******               
+#    //   //      // //         //  ///////    ///////                
+#                                                                     
+# Version 5.3.0 Revision 23927 Hash (prev commit) 1730222ea           
+#                        Branch is                                    
+#         MPI+OpenMP+SLK+SLEPC+HDF5_MPI_IO Build                      
+#                http://www.yambo-code.eu                             
+#
+gw0                              # [R] GW approximation
+ppa                              # [R][Xp] Plasmon Pole Approximation for the Screened Interaction
+el_el_corr                       # [R] Electron-Electron Correlation
+dyson                            # [R] Dyson Equation solver
+rim_cut                          # [R] Coulomb potential
+HF_and_locXC                     # [R] Hartree-Fock
+em1d                             # [R][X] Dynamically Screened Interaction
+ElecTemp= 0.000000         eV    # Electronic Temperature
+#DegFix                        # Force the code to impose the energy levels to respect their degeneracy
+X_Threads=0                      # [OPENMP/X] Number of threads for response functions
+DIP_Threads=0                    # [OPENMP/X] Number of threads for dipoles
+SE_Threads=0                     # [OPENMP/GW] Number of threads for self-energy
+RandQpts= 3000000                # [RIM] Number of random q-points in the BZ
+RandGvec= 103              RL    # [RIM] Coulomb interaction RS components
+CUTGeo= "box z"                  # [CUT] Coulomb Cutoff geometry: box/cylinder/sphere/ws/slab X/Y/Z/XY..
+% CUTBox
+  0.00000 |  0.00000 | 47.00000 |        # [CUT] [au] Box sides
+%
+CUTRadius= 0.000000              # [CUT] [au] Sphere/Cylinder radius
+CUTCylLen= 0.000000              # [CUT] [au] Cylinder length
+CUTwsGvec= 0.700000              # [CUT] WS cutoff: number of G to be modified
+EXXRLvcs= 126901           RL    # [XX] Exchange    RL components
+VXCRLvcs= 126901           RL    # [XC] XCpotential RL components
+Chimod= "HARTREE"                # [X] IP/Hartree/ALDA/LRC/PF/BSfxc
+% BndsRnXp
+   1 | 100 |                         # [Xp] Polarization function bands
+%
+NGsBlkXp= 20               Ry    # [Xp] Response block size
+% LongDrXp
+ 1.000000 | 0.000000 | 0.000000 |        # [Xp] [cc] Electric Field
+%
+PPAPntXp= 47.21138         eV    # [Xp] PPA imaginary energy
+% GbndRnge
+   1 | 100 |                         # [GW] G[W] bands range
+%
+GTermKind= "none"                # [GW] GW terminator ("none","BG" Bruneval-Gonze,"BRS" Berger-Reining-Sottile)
+DysSolver= "n"                   # [GW] Dyson Equation solver ("n","s","g","q")
+%QPkrange                        # [GW] QP generalized Kpoint/Band indices
+1|1|1|10|
+%

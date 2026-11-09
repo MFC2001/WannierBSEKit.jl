@@ -1,0 +1,9 @@
+&INPUTPP
+   outdir   = './'
+   prefix   = 'pwscf'
+   seedname = 'wannier90'
+   spin_component = 'none'
+   write_mmn = .true.
+   write_amn = .false.
+   write_unk = .false.
+/
