@@ -127,6 +127,17 @@ end
 # scripts run in Main, where include is always available
 const MAIN_ONLY_NAMES = Set([:include])
 
+# check whether s is accessible in module m (including names from using and reexport)
+function is_accessible(m::Module, s::Symbol)
+    isdefined(m, s) && return true
+    try
+        Core.eval(m, s)
+        return true
+    catch
+        return false
+    end
+end
+
 # ---------- return (missing packages, unresolved call names) ----------
 function unresolved_calls(source)
     ex = Meta.parseall(source)
@@ -135,7 +146,7 @@ function unresolved_calls(source)
     called = collect_called(ex)
     bound = collect_bound(ex)
     unknown = Set(s for s in called if
-        !(s in bound) && !(s in MAIN_ONLY_NAMES) && !isdefined(sandbox, s))
+        !(s in bound) && !(s in MAIN_ONLY_NAMES) && !is_accessible(sandbox, s))
     return missing, unknown
 end
 
