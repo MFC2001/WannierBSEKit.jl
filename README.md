@@ -14,7 +14,7 @@ A single `using WannierBSEKit` exposes the complete public API of two scientific
   Wannier90 output (`TightBindModel`), BSE Hamiltonians (`BSE`), exciton bands (`BAND`) and optical spectra
   (`absorption`, `optcond`).
 
-The package also ships three worked examples — graphone, LiF and monolayer MoS2 — with their input files,
+The package also ships three worked examples — Graphone, LiF and monolayer MoS₂ — with their input files,
 driver scripts and reference output data.
 
 > **Scope.** This is an *umbrella* package: it contains no physics implementation of its own. It fixes one tested
@@ -69,10 +69,10 @@ Install the package from its repository with `Pkg.add`:
 
 ```julia
 using Pkg
-Pkg.add(url = "https://github.com/MFC2001/WannierBSEKit.jl")
+Pkg.add(url = "https://github.com/MFC2001/WannierBSEKit.jl", rev = "v0.3.1")
 ```
 
-Alternatively, clone the repository and install the local copy with `Pkg.develop`:
+Alternatively, clone the repository at tag `v0.3.1` and install the local copy with `Pkg.develop`:
 
 ```julia
 Pkg.develop(path = "/path/to/WannierBSEKit")

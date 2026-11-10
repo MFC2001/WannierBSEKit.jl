@@ -1,7 +1,7 @@
 name = "WannierBSEKit"
 uuid = "c57895eb-59db-4358-a51c-d054e19e0029"
 authors = ["FanchenMeng <mengfc011220@gmail.com> and contributors"]
-version = "0.3.0"
+version = "0.3.1"
 
 [deps]
 Reexport = "189a3867-3050-52da-a836-e630ba90ab69"
