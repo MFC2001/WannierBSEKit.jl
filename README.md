@@ -108,8 +108,7 @@ WannierBSEKit/
 ├── Project.toml                 package metadata, exact version pins
 ├── LICENSE                      MIT
 ├── src/WannierBSEKit.jl         module: docstring and re-exports only
-├── test/
-├── .github/
+├── test/                        testing script
 └── examples/
     ├── Graphone/                2D ferromagnetic graphone (Yambo screening)
     ├── LiF/                     3D bulk LiF (BerkeleyGW screening)
