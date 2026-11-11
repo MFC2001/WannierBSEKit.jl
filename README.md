@@ -59,9 +59,8 @@ The top-level entries are `?WannierBSEKit` (overview of the bundle and this inst
 
 ## 3. Installation
 
-`WannierBSEKit` requires Julia 1.10 or newer. Its dependencies are all registered in the General registry, so only
-`WannierBSEKit` itself has to be installed explicitly; Julia installs the dependencies automatically at the
-versions specified in `Project.toml`.
+`WannierBSEKit` requires Julia 1.10 or later, and all of its dependencies are registered in the General registry. 
+When `WannierBSEKit` is installed, Julia's package manager will automatically resolve and install the dependencies according to the compatibility requirements in `Project.toml`.
 
 ### 3.1 On a networked machine
 
