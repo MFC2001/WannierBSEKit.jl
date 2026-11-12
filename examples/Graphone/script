@@ -1,6 +1,6 @@
 # Command checklist for the graphone workflow.
 # Run each program block inside the directory named by its comment (# 01-scf,
-# # 02-p2y, ...); run the cp/ln preparation lines from this examples/Graphone
+# # 02-p2y, ...); run the cp/ln preparation lines from this examples/graphone
 # directory.  Modify pseudo_dir, the $...bin variables and the paths for your
 # own installation.
 

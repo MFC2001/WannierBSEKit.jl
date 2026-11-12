@@ -1,5 +1,5 @@
 &CONTROL
-  title         = 'Graphone',
+  title         = 'graphone',
 !  restart_mode  = 'restart', !default:'from_scratch'
   calculation   = 'bands',      !options:'scf','nscf','bands','relax','vc-relax',etc.
   tprnfor       = .true., 

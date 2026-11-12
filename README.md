@@ -14,7 +14,7 @@ A single `using WannierBSEKit` exposes the complete public API of two scientific
   Wannier90 output (`TightBindModel`), BSE Hamiltonians (`BSE`), exciton bands (`BAND`) and optical spectra
   (`absorption`, `optcond`).
 
-The package also ships three worked examples — Graphone, LiF and monolayer MoS₂ — with their input files,
+The package also ships three worked examples — graphone, LiF and monolayer MoS₂ — with their input files,
 driver scripts and reference output data.
 
 > **Scope.** This is an *umbrella* package: it contains no physics implementation of its own. It fixes one tested
@@ -109,7 +109,7 @@ WannierBSEKit/
 ├── src/WannierBSEKit.jl         module: docstring and re-exports only
 ├── test/                        testing script
 └── examples/
-    ├── Graphone/                2D ferromagnetic graphone (Yambo screening)
+    ├── graphone/                2D ferromagnetic graphone (Yambo screening)
     ├── LiF/                     3D bulk LiF (BerkeleyGW screening)
     └── MoS2/                    2D monolayer MoS2 (noncollinear, BerkeleyGW)
 ```
@@ -136,8 +136,8 @@ and replace `pseudo_dir` in every `pw.in`.
 
 ### 5.2 Practical notes
 
-- **Use Graphone for a quick check.** If you only want to verify that the whole workflow runs on your machine,
-  start with [`examples/Graphone`](examples/Graphone): it is the smallest and fastest of the three cases.
+- **Use graphone for a quick check.** If you only want to verify that the whole workflow runs on your machine,
+  start with [`examples/graphone`](examples/graphone): it is the smallest and fastest of the three cases.
 - **The numerical parameters are production values.** Apart from file paths (and the executable prefixes above),
   every parameter in the template inputs — cutoffs, k-point meshes, band windows, scissor shifts, broadening,
   interaction cutoffs, etc. — is the production value used to obtain the reference results in the example folders.
@@ -151,7 +151,7 @@ and replace `pseudo_dir` in every `pw.in`.
 
 ### 5.3 What each case demonstrates
 
-- **Graphone** — 2D ferromagnet with two spin channels, Yambo screening, spin-resolved BSE band
+- **graphone** — 2D ferromagnet with two spin channels, Yambo screening, spin-resolved BSE band
   (`07-bse/bseband.dat`) and one-particle bands (`eleband/`).
 - **LiF** — 3D bulk with BerkeleyGW screening, WannierBerri Hamiltonian and a GW scissor shift.
 - **MoS2** — noncollinear monolayer with spin–orbit coupling, 22 spinor orbitals, `channel = 1`.
